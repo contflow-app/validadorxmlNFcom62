@@ -1,5 +1,7 @@
 streamlit
 pandas
+openpyxl
+xlsxwriter
 lxml
-pyyaml
+PyYAML
 reportlab
