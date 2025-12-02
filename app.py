@@ -678,7 +678,7 @@ def generate_excel_report(
     else:
         df_detalhe_br = df_detalhe
 
-    with pd.ExcelWriter(output, engine="openpyxl") as writer:
+    with pd.ExcelWriter(output, engine="xlsxwriter") as writer:
         if df_resumo is not None and not df_resumo.empty:
             df_resumo.to_excel(writer, sheet_name="Resumo", index=False)
 
@@ -1144,3 +1144,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
